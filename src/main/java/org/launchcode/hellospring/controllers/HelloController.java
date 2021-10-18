@@ -20,7 +20,7 @@ public class HelloController {
         return "Goodbye, Spring!";
     }
 
-    // // Handler that handles the requests of the form /hello            (?name=LaunchCode)
+    // // Handles the requests of the form /hello                 (?name=LaunchCode)
     // RequestMapping handles both get and post requests
     @RequestMapping(method={RequestMethod.GET, RequestMethod.POST}, value="hello")
     @ResponseBody
@@ -28,7 +28,7 @@ public class HelloController {
         return "Hello, " + name + "!";
     }
 
-    // Handler that handles requests of the form /hello/LaunchCode
+    // Handles requests of the form /hello/LaunchCode
     @GetMapping("hello/{name}")
     @ResponseBody
     public String helloWithPathParam(@PathVariable String name) {
