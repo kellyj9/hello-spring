@@ -42,7 +42,7 @@ public class HelloController {
         return "<html>" +
                 "<body>" +
                 "<form action='/hello' method='post'>" +  // submit a request to /hello
-                                                        // note the default method if not specified is post
+                                                // note the default method if not specified is post
                 "<input type='text' name='name'>" +
                 "<input type='submit' value='Greet me!'>" +
                 "</form>" +
